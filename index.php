@@ -36,7 +36,7 @@
                     <img src="./imagens/estacio-logo.png" alt="logo da estácio" width="200px">
                     <h2>Fazer Cadastro</h2>
                     <h4>Faça seu cadastro para acessar a plataforma</h4>
-                    <h3>PHP+MySql</h3>
+                    <h3>PHP+MySQL</h3>
                 </div>
             </div>
         </div>
