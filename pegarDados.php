@@ -1,8 +1,10 @@
 <?php
+    include_once("conexao.php");
     if(isset($_POST["enviar"])){
         $nome=$_POST["nome"];
         $email=$_POST["email"];
         $idade=$_POST["idade"];
         $senha=$_POST["senha"];
-           
+        $query=;
+        mysqli_execute_query($conexao,$query);
     }
