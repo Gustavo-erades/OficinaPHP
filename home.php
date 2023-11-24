@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-    include_once("conexao.php");
+    include_once("./conexao/conexao.php");
     $sql="SELECT * FROM USUARIO;";
     $resultado=mysqli_query($conexao,$sql);
 ?>
