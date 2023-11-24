@@ -8,5 +8,5 @@
         $slq="INSERT INTO USUARIO(NOME,DT_NASCIMENTO,EMAIL,SENHA) 
         VALUES('$nome','$idade','$email',MD5('$senha'));";
         mysqli_query($conexao,$slq);
-        header("Location:home.php");
+        header("Location:../login.php");
     }
