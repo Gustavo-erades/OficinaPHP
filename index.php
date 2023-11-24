@@ -18,15 +18,15 @@
                     </div>
                     <div>
                         <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" placeholder="Example:email@gmail.com">
+                        <input type="email" id="email" name="email" placeholder="Example:email@gmail.com" required onkeyup="corBorda2()">
                     </div>
                     <div>
                         <label for="idade">Data de nascimento:</label>
-                        <input type="date" id="idade" name="idade" required>
+                        <input type="date" id="idade" name="idade" required onkeyup="corBorda3()">
                     </div>
                     <div>
                         <label for="senha">Senha:</label>
-                        <input type="password" id="senha" name="senha" placeholder="Sua senha" required>
+                        <input type="password" id="senha" name="senha" placeholder="Sua senha" required onkeyup="corBorda4()">
                     </div>
                     <button type="submit" name="enviar" id="enviar">
                         Cadastrar
