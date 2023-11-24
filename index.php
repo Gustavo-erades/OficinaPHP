@@ -14,11 +14,11 @@
                 <form action="pegarDados.php" method="post" id="formulario">
                     <div>
                         <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Example: Fulano D. Tal" required>
+                        <input type="text" id="nome" name="nome" placeholder="Example: Fulano D. Tal" required onkeyup="corBorda()">
                     </div>
                     <div>
                         <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" placeholder="Example:email@gmail.com" required>
+                        <input type="email" id="email" name="email" placeholder="Example:email@gmail.com">
                     </div>
                     <div>
                         <label for="idade">Data de nascimento:</label>
