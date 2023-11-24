@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container,#div_formulario{
+    height: 100vh;
+}
+.container{
+    text-align: center;
+    background:linear-gradient(to bottom,rgb(0, 106, 255),rgb(18, 64, 129),rgb(3, 31, 69));
+    background: -o-linear-gradient(to bottom,rgb(0, 106, 255),rgb(18, 64, 129),rgb(3, 31, 69)),
+                -moz-linear-gradient(to bottom,rgb(0, 106, 255),rgb(18, 64, 129),rgb(3, 31, 69)),
+                -webkit-linear-gradient(to bottom,rgb(0, 106, 255),rgb(18, 64, 129),rgb(3, 31, 69));
+}      
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#div_grid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    background-color: #fff;
+    font-size: 1.5em;
+}
+#texto{
+    background-color: rgb(0, 106, 255);
+    padding: 20px;
+    color:#fff;
+}
+#texto h2{
+    font-size:2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#texto h3{
+    color:rgb(12, 46, 95);
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+#texto h4{
+    font-size: 0.6em;
+}
+#formulario{
+    padding: 20px;
+}
+label{
+    display: inline;
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color:rgb(18, 64, 129);
+    text-shadow: 1px 1px 4px rgba(207, 207, 207, 0.4);
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 8px 5px;
+    font-size:1.1em;
+    margin-bottom: 5px;
+    color:#303030;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    border: 2px solid rgb(0, 106, 255);
+}
+#enviar{
+    font-size: 0.9em;
+    padding: 10px 8px;
+    border-radius: 12px;
+    background-color:rgb(18, 64, 129);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    outline:none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#enviar:hover{
+    background-color: rgb(0, 106, 255);
+}
