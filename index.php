@@ -11,7 +11,7 @@
     <div class="container">
         <div id="div_formulario" class="flex-box">
             <div id="div_grid">
-                <form action="pegarDados.php" method="post" id="formulario">
+                <form action="./cadastro/pegarDados.php" method="post" id="formulario">
                     <div>
                         <label for="nome">Nome:</label>
                         <input type="text" id="nome" name="nome" placeholder="Example: Fulano D. Tal" required onkeyup="corBorda()">
