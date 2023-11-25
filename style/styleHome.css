@@ -1,0 +1,23 @@
+#header,#footer{
+    background:rgb(0, 106, 255);
+    color:#fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#header{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#header h1{
+    display: inline;
+    padding-left: 10px;
+}
+#div_tabela{
+    height: 100vh;
+}
+#footer{
+    text-transform: uppercase;
+}
+body{
+    background-color: #e7e7e7;
+}
