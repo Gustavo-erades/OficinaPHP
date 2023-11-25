@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="./style/style.css">
     <script src="./scripts/script.js" defer></script>
     <title>Oficina PHP+MySql</title>
+    <style>
+        a{
+            font-size: 0.6em;
+        }
+        a:hover{
+            color:rgb(0, 106, 255);;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -23,6 +31,11 @@
                     <button type="submit" name="enviar" id="enviar" class="botao_login">
                         Login
                     </button>
+                    <div>
+                        <a href="index.php">
+                            Não possui um login? Faça seu cadastro aqui.
+                        </a>
+                    </div>
                 </form>
                 <div id="texto">
                     <img src="./imagens/estacio-logo.png" alt="logo da estácio" width="200px">
