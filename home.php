@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <?php
     include_once("./conexao/conexao.php");
-    $sql="SELECT * FROM USUARIO;";
-    $resultado=mysqli_query($conexao,$sql);
+    session_start();
+    if(isset($_SESSION["logado"])){
+        $sql="SELECT * FROM USUARIO;";
+        $resultado=mysqli_query($conexao,$sql);
+    }else{
+        header("Location:../login.php");
+    }
 ?>
 <html lang="pt-br">
 <head>
@@ -18,24 +23,69 @@
             <div>
                 <img src="./imagens/estacio-logo.png" alt="logo da estácio" width="40px">
                 <h1>
-                    Olá, Gustavo Êrades Vilarinho Silva
+                    Olá, <?= $_SESSION["nome"] ?>
                 </h1>
             </div>
             <div>
                 <h3>
-                    Idade: 20 anos
+                    Idade: <?= $_SESSION["idade"] ?>
                 </h3>
                 <h3>
-                    Email: eradesvilarinho@gmail.com
+                    Email: <?= $_SESSION["email"] ?>
                 </h3>
             </div>
         </div>
-        <div id="div_tabela">
-            <div>
+        <button id="sair">
+            <a href="logout.php">
+                Encerrar sessão
+            </a>
+        </button>
+        <div id="div_corpo">
+           <div class="div_tabela">
+                <h2>Dados registrados no banco de dados:</h2>
+           </div>
+           <div class="div_tabela dados_banco">
                 <table>
-                    
+                    <tr>
+                        <th>
+                            Id
+                        </th>
+                        <th>
+                            Nome
+                        </th>
+                        <th>
+                            Email
+                        </th>
+                        <th>
+                            Data de nascimento
+                        </th>
+                        <th>
+                            Modificar
+                        </th>
+                    </tr>
+                    <?php
+                        while($row=mysqli_fetch_array($resultado)){
+                            echo "<tr>";
+                            echo "<td>";
+                            echo $row["id"];
+                            echo "</td>";
+                            echo "<td>";
+                            echo $row["nome"];
+                            echo "</td>";
+                            echo "<td>";
+                            echo $row["email"];
+                            echo "</td>";
+                            echo "<td>";
+                            echo $row["dt_nascimento"];
+                            echo "</td>";
+                            echo "<td>";
+                            echo "deletar";
+                            echo "</td>";
+                            echo "</tr>";
+                        }
+                    ?>
                 </table>
-            </div>
+           </div>
         </div>
         <div id="footer">
             <p>

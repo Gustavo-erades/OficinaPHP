@@ -12,12 +12,53 @@
     display: inline;
     padding-left: 10px;
 }
-#div_tabela{
+#div_corpo{
+    clear: left;
     height: 100vh;
+}
+.div_tabela{
+    background-color: #fff;
+    border-radius: 12px;
+    display: inline-block;
+    padding: 20px;
+    margin-top: 100px;
+}
+.dados_banco{
+    display: block;
+    margin: 10px 50px 0 50px;
+}
+table{
+    width: 100%;
+}
+table,th,td{
+    border: 2px solid #bebebe;
+    border-collapse: collapse;
+}
+th{
+    text-transform: uppercase;
 }
 #footer{
     text-transform: uppercase;
 }
 body{
     background-color: #e7e7e7;
+}
+button{
+    float: left;
+    margin-top: 5px;
+    margin-left:5px;
+    background-color: rgb(243, 58, 58);
+    border-radius: 12px;
+    font-size: 1em;
+    padding: 8px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+button a{
+    color: #fff;
+    text-decoration: none;
 }

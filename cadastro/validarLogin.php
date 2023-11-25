@@ -7,7 +7,13 @@
         email='$email' AND senha='$senha'";
         $resultado=mysqli_query($conexao,$sql);
         if(mysqli_num_rows($resultado)>0){
+            $dados=mysqli_fetch_array($resultado);
             header("Location:../home.php");
+            session_start();
+            $_SESSION["logado"]=true;
+            $_SESSION["nome"]=$dados["nome"];
+            $_SESSION["idade"]=$dados["dt_nascimento"];
+            $_SESSION["email"]=$dados["email"];
         }else{
             header("Location:../login.php");
         }
