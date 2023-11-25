@@ -6,7 +6,7 @@
         $sql="SELECT * FROM USUARIO;";
         $resultado=mysqli_query($conexao,$sql);
     }else{
-        header("Location:../login.php");
+        header("Location:login.php");
     }
 ?>
 <html lang="pt-br">
