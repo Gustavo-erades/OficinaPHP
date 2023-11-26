@@ -38,7 +38,7 @@
                     </div>
                 </form>
                 <div id="texto">
-                    <img src="./imagens/estacio-logo.png" alt="logo da estácio" width="200px">
+                    <img src="./imagens/estacio-logo.png" alt="logo da estácio" width="100px">
                     <h2>Fazer Login</h2>
                     <h4>Entre com seu email e senha</h4>
                     <h3>PHP+MySQL</h3>

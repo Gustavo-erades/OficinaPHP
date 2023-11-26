@@ -35,18 +35,25 @@ body{
     color:#fff;
 }
 #texto h2{
-    font-size:2em;
+    font-size:1.5em;
     text-transform: uppercase;
     font-weight: bold;
 }
 #texto h3{
     color: rgb(140, 185, 249);
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-top: 10px;
 }
 #texto h4{
     font-size: 0.6em;
+}
+#texto img{
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+#texto img#img_index{
+    margin-top: 80px;
 }
 #formulario{
     padding: 20px;
