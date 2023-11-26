@@ -78,11 +78,14 @@
                             echo "<td>";
                             echo $row["dt_nascimento"];
                             echo "</td>";
-                            echo "<td>";
+                            echo "<td class='deletar'>";
+                            echo "<a href='./cadastro/deletarCadastro.php?id=".$row["id"]."'>";
                             echo "deletar";
+                            echo "<a>";
                             echo "</td>";
                             echo "</tr>";
                         }
+                        
                     ?>
                 </table>
            </div>

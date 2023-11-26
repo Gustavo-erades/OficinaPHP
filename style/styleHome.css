@@ -62,3 +62,18 @@ button a{
     color: #fff;
     text-decoration: none;
 }
+.deletar{
+    cursor: pointer;
+    background-color: rgb(243, 58, 58);
+    padding: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#fff;
+}
+.deletar a{
+    color:#fff;
+    text-decoration: none;
+}
+.deletar:hover, #sair:hover{
+    background-color: rgb(152, 31, 31);
+}
