@@ -6,6 +6,7 @@
         $sql="SELECT * FROM USUARIO WHERE 
         email='$email' AND senha='$senha'";
         $resultado=mysqli_query($conexao,$sql);
+        mysqli_close($conexao);
         if(mysqli_num_rows($resultado)>0){
             $dados=mysqli_fetch_array($resultado);
             header("Location:../home.php");

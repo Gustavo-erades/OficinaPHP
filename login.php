@@ -22,10 +22,10 @@
                 <form action="./cadastro/validarLogin.php" method="post" id="formulario">
                     <div>
                         <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" placeholder="Example:email@gmail.com" required onkeyup="corBorda2()">
+                        <input type="email" id="email" name="email" placeholder="Exemplo:email@gmail.com" required onkeyup="corBorda2()">
                     </div>
                     <div>
-                        <label for="senha">Senha:</label>
+                        <label for="senha" id="senha_login">Senha:</label>
                         <input type="password" id="senha" name="senha" placeholder="Sua senha" required onkeyup="corBorda4()">
                     </div>
                     <button type="submit" name="enviar" id="enviar" class="botao_login">

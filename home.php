@@ -5,6 +5,13 @@
     if(isset($_SESSION["logado"])){
         $sql="SELECT * FROM USUARIO;";
         $resultado=mysqli_query($conexao,$sql);
+        function data($data){
+            return date("d/m/Y",strtotime($data));
+        }
+        function idade($nascimento){
+            $idade= intval(date("Y"))-intval(date("Y",strtotime($nascimento)));
+            return $idade;
+        }
     }else{
         header("Location:login.php");
     }
@@ -28,7 +35,7 @@
             </div>
             <div>
                 <h3>
-                    Idade: <?= $_SESSION["idade"] ?>
+                    Idade: <?= idade($_SESSION["idade"]);?> anos
                 </h3>
                 <h3>
                     Email: <?= $_SESSION["email"] ?>
@@ -59,7 +66,7 @@
                         <th>
                             Data de nascimento
                         </th>
-                        <th>
+                        <th id="th_del">
                             Modificar
                         </th>
                     </tr>
@@ -76,7 +83,7 @@
                             echo $row["email"];
                             echo "</td>";
                             echo "<td>";
-                            echo $row["dt_nascimento"];
+                            echo data($row["dt_nascimento"]);
                             echo "</td>";
                             echo "<td class='deletar'>";
                             echo "<a href='./cadastro/deletarCadastro.php?id=".$row["id"]."'>";

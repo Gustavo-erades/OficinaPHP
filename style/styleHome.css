@@ -77,3 +77,6 @@ button a{
 .deletar:hover, #sair:hover{
     background-color: rgb(152, 31, 31);
 }
+th#th_del{
+    background-color: #e7e7e7;
+}

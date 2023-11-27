@@ -4,3 +4,4 @@
     $password="admin1234";
     $dbname="aulaPHP";
     $conexao=mysqli_connect($hostname,$username,$password,$dbname);
+    
