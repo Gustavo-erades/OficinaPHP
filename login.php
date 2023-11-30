@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<?php
+    $msg=null;
+    if(isset($_GET["erro"])){
+        $msg="<p id='msgErro'>Usuário inexistente no sistema! E-mail ou senha incorretos.</p>";
+    }
+?>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -18,9 +24,13 @@
 </head>
 <body>
     <div class="container">
+       
         <div id="div_formulario" class="flex-box">
             <div id="div_grid">
                 <form action="./cadastro/validarLogin.php" method="post" id="formulario">
+                <div id="erro">
+                    <?= $msg ?>
+                </div>
                     <div>
                         <label for="email">E-mail:</label>
                         <input type="email" id="email" name="email" placeholder="Exemplo:email@gmail.com" required onkeyup="corBorda2()">

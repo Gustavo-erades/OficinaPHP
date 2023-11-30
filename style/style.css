@@ -97,3 +97,11 @@ input{
 #senha_login{
     margin-top: 5px;
 }
+div#erro{
+    margin-bottom: 8px;
+}
+p#msgErro{
+    color:red;
+    font-weight: bold;
+    font-size: 0.6em;
+}

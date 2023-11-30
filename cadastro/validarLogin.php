@@ -16,6 +16,6 @@
             $_SESSION["idade"]=$dados["dt_nascimento"];
             $_SESSION["email"]=$dados["email"];
         }else{
-            header("Location:../login.php");
+            header("Location:../login.php?erro=true");
         }
     }
