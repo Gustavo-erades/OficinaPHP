@@ -38,6 +38,12 @@
                     <h2>Fazer Cadastro</h2>
                     <h4>Faça seu cadastro para acessar a plataforma</h4>
                     <h3>PHP+MySQL</h3>
+                    <p id="jaTemCadastro">
+                        já possui cadastro?
+                        <a href="login.php">
+                            Faça seu login.
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>

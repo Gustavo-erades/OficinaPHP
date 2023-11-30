@@ -105,3 +105,14 @@ p#msgErro{
     font-weight: bold;
     font-size: 0.6em;
 }
+p#jaTemCadastro{
+    font-size: 0.6em;
+    margin-top: 100px;
+    color: rgb(140, 185, 249);
+}
+p#jaTemCadastro a{
+    color: rgb(255, 255, 255);
+}
+p#jaTemCadastro a:hover{
+    color: rgb(140, 185, 249);;
+}
