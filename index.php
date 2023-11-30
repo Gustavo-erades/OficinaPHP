@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <script src="./scripts/script.js" defer></script>
-    <title>Oficina PHP+MySql</title>
+    <link rel="shortcut icon" href="./imagens/estacio-logo.png" type="image/x-icon">
+    <title>Cadastro</title>
 </head>
 <body>
     <div class="container">

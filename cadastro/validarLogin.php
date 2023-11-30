@@ -4,7 +4,7 @@
         $email=$_POST["email"];
         $senha=md5($_POST["senha"]);
         $sql="SELECT * FROM USUARIO WHERE 
-        email='$email' AND senha='$senha'";
+        email='$email' AND senha='$senha'"; 
         $resultado=mysqli_query($conexao,$sql);
         mysqli_close($conexao);
         if(mysqli_num_rows($resultado)>0){
