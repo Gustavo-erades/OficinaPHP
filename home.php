@@ -35,7 +35,7 @@
             </div>
             <div>
                 <h3>
-                    Idade: <?= idade($_SESSION["idade"]);?> anos
+                    Idade: <?= idade($_SESSION["idade"])?> anos
                 </h3>
                 <h3>
                     Email: <?= $_SESSION["email"] ?>
