@@ -13,14 +13,6 @@
     <script src="./scripts/script.js" defer></script>
     <link rel="shortcut icon" href="./imagens/estacio-logo.png" type="image/x-icon">
     <title>Login</title>
-    <style>
-        a{
-            font-size: 0.6em;
-        }
-        a:hover{
-            color:rgb(0, 106, 255);;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -42,6 +34,11 @@
                     <button type="submit" name="enviar" id="enviar" class="botao_login">
                         Login
                     </button>
+                    <div>
+                        <a href="trocarSenha.php">
+                            Esqueci a senha
+                        </a>
+                    </div>
                     <div>
                         <a href="index.php">
                             Não possui um login? Faça seu cadastro aqui.
