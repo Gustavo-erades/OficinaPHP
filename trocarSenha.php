@@ -18,7 +18,7 @@
                     <h2>Recuperar senha</h2>
                     <h4>Um email será enviado com a chave de acesso</h4>
                 </div>
-                <form action="" method="post" id="formulario">
+                <form action="./recuperarSenha/validaEmail.php" method="post" id="formulario">
                     <div>
                         <label for="email">E-mail:</label>
                         <input type="email" id="email" name="email" placeholder="Exemplo:email@gmail.com" required onkeyup="corBorda2()">
