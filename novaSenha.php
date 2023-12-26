@@ -33,6 +33,11 @@
                     <button id="execCopy">
                         copiar
                     </button>
+                    <div>
+                        <p>
+                            <a href="atualizar senha">clique aqui</a> e use essa chave para trocar sua senha.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
