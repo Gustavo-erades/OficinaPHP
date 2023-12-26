@@ -29,16 +29,20 @@
                 </div>
                 <div>
                     <h3>Sua chave é:</h3>
-                    <h1 id="novaChave">
-                        <?=$chave?>
-                    </h1>
-                    <button type="submit" name="enviar" id="copiar" class="botao_login" onclick="copiarTexto()">
+                    <input type="text" value="<?=$chave?>" id="input" readonly>
+                    <button id="execCopy">
                         copiar
                     </button>
                 </div>
             </div>
         </div>
     </div>
-    <script src="./scripts/script.js"></script>
+    <script>
+        document.getElementById('execCopy').addEventListener('click', execCopy);
+        function execCopy() {
+            document.querySelector("#input").select();
+            document.execCommand("copy");
+        }
+    </script>
 </body>
 </html>

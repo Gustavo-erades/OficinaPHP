@@ -1,11 +1,3 @@
-function copiarTexto(){
-    const texto= document.getElementById("novaChance");
-    const botao=document.querySelector("#copiar");
-    botao.addEventListener("click",()=>{
-        texto.execCommand("copy");
-    })
-    
-}
 function corBorda(){
     const inputNome=document.querySelector("#nome");
     const inputNomeValue=document.querySelector("#nome").value;
