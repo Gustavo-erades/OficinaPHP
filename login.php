@@ -35,7 +35,7 @@
                         Login
                     </button>
                     <div>
-                        <a href="index.php">
+                        <a href="index.php" id="linkLogin">
                             Não possui um login? Faça seu cadastro aqui.
                         </a>
                     </div>

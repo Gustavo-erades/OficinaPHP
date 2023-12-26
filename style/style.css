@@ -116,7 +116,7 @@ p#jaTemCadastro a{
 p#jaTemCadastro a:hover{
     color: rgb(140, 185, 249);;
 }
-a{
+a#linkLogin{
     font-size: 0.6em;
 }
 a:hover{
