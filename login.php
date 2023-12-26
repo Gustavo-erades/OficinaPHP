@@ -35,11 +35,6 @@
                         Login
                     </button>
                     <div>
-                        <a href="trocarSenha.php">
-                            Esqueci a senha
-                        </a>
-                    </div>
-                    <div>
                         <a href="index.php">
                             Não possui um login? Faça seu cadastro aqui.
                         </a>
